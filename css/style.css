@@ -72,11 +72,11 @@
     min-height: 580px;
 }
 
-footer .content-coral {
+.debug footer .content-coral {
     background-color: #F08080;
 }
 
-footer .content-aqua {
+.debug footer .content-aqua {
     background-color: #20B2AA;
 }
 
@@ -163,6 +163,10 @@ COMMON
     padding: 0 4px 9px 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
 main .central-section .content-pink {
     padding: 35px 40px 0 0;
 }
@@ -214,7 +218,6 @@ nav .img {
 
 header .header-top nav ul {
     flex-grow: 1;
-    list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -339,6 +342,7 @@ main .bottom-section .green-box h3 {
 
 footer {
     background-color: #23272A;
+    color: white;
     /* display: flex;
     justify-content: center; */
 }
@@ -351,17 +355,59 @@ footer .footer-top {
 footer .content-footer-top {
     max-width: 1200px;
     display: flex;
-    margin: 0 auto;
+    margin: 50px auto 30px;
 }
 
 footer .content-coral {
-    flex-grow: 2;
+    width: 25%;
+}
+
+footer .content-coral strong {
+    font-size: 30px;
+    color: #7289d0;
+}
+
+footer .content-coral .lingua {
+    margin: 10px 0;
+}
+
+footer .content-coral .lingua .ita {
+    width: 20px;
+    vertical-align: middle;
+}
+
+footer .content-coral div::after {
+    content: '\2304';
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 13px 1px;
+}
+
+footer .content-coral .fa-brands {
+    margin-right: 20px;
+    font-size: 18px;
 }
 
 footer .content-aqua {
     flex-grow: 1;
 }
 
+footer .content-aqua ul li:first-child {
+    color: #7289d0
+}
+
+footer .content-aqua ul li {
+    margin-bottom: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .content-aqua ul li a:hover {
+    text-decoration: underline;
+}
 /* Footer Bottom */
 
 footer .footer-bottom {
