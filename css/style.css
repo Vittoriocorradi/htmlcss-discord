@@ -143,8 +143,15 @@ COMMON
 }
 
 main .central-section .content-pink {
-    padding-top: 35px;
-    margin: 0 -50px;
+    padding: 35px 40px 35px 0;
+}
+
+/* main .central-section .content-pink:nth-child(even) {
+    margin-left: -50px;
+} */
+
+main section:nth-child(odd) .content-pink {
+    margin-left: -50px;
 }
 
 /* Header Top*/
@@ -272,7 +279,7 @@ section .content {
 }
 
 section:nth-child(even) {
-    background-color: #D3D3D3;
+    background-color: #f6f6f6;
 }
 
 section .content-pink {
