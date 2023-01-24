@@ -95,9 +95,31 @@ COMMON
 **** 
  */
 
- .btn {
-    border-radius: 20px;
- }
+.btn {
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.white {
+    background-color: #ffffff;
+    padding: 15px;
+    color: #181c3a;
+}
+
+.white:hover {
+    color: #255ee9;
+    box-shadow: 0 2px 8px 2px #444444;
+}
+
+.black {
+    background-color: #23272a;
+    padding: 15px;
+    color: #fffaea;
+}
+
+.black:hover {
+    box-shadow: 0 2px 8px 2px #dddddd;
+}
 
 /* Header Top*/
 
@@ -161,16 +183,9 @@ nav .right {
 }
 
 header .header-top nav .right a {
-    text-decoration: none;
-    background-color: #ffffff;
     padding: 10px;
-    color: #181c3a;
 }
 
-header .header-top nav .right a:hover {
-    color: #255ee9;
-    box-shadow: 0 2px 8px 2px #444444;
-}
     /* padding-right: 10px
 }
 
@@ -189,6 +204,34 @@ nav .left {
 .header-bottom .jumbotron {
     max-width: 900px;
     margin: auto;
+    text-align: center;
+}
+
+header .header-bottom h1 {
+    margin: 100px 0 45px 0;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+header .header-bottom p {
+    line-height: 35px;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+header .header-bottom .btn-header-bottom {
+    margin: 0 0 80px 0;
+}
+
+header .header-bottom div a:first-child::before {
+    content: '\2193';
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 4px 9px 0;
+}
+
+header .header-bottom div > a {
+    margin: 0 10px;
 }
 
 /* Main Section */ 
