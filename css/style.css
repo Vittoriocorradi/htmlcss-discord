@@ -116,7 +116,7 @@ COMMON
  */
 
 .btn {
-    border-radius: 25px;
+    border-radius: 30px;
     text-decoration: none;
     font-family: inherit;
 }
@@ -125,6 +125,11 @@ COMMON
     padding: 15px;
     font-size: 20px;
 } 
+
+.small {
+    padding: 10px;
+    font-size: 14px;
+}
 
 .white {
     background-color: #ffffff;
@@ -237,10 +242,6 @@ nav .right {
     text-align: right;
 }
 
-header .header-top nav .right a {
-    padding: 10px;
-}
-
     /* padding-right: 10px
 }
 
@@ -349,13 +350,15 @@ footer {
 
 footer .footer-top {
     padding: 10px 40px 0;
-    border-bottom: 4px solid #9A9A9A;
 }
 
 footer .content-footer-top {
     max-width: 1200px;
     display: flex;
-    margin: 50px auto 30px;
+    justify-content: space-between;
+    margin: 55px auto 0;
+    border-bottom: 2px solid #4f5d8c;
+    padding-bottom: 25px;
 }
 
 footer .content-coral {
@@ -411,7 +414,7 @@ footer .content-aqua ul li a:hover {
 /* Footer Bottom */
 
 footer .footer-bottom {
-    padding: 30px 0 0 0;
+    padding: 10px 0 50px 0;
     border-bottom: 4px solid #9A9A9A;
 }
 
@@ -425,5 +428,4 @@ footer .footer-bottom {
 
 .footer {
     padding: 5px;
-    background-color: #FFC6B1;
 }
