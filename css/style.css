@@ -89,6 +89,26 @@ footer .content-aqua {
     background-color: #7FFFD4;
 }
 
+/* 
+****
+TYPE
+****
+ */
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body p {
+    line-height: 35px;
+    font-size: 20px;
+}
+
+main section h2 {
+    font-size: 44px;
+    font-weight: 700;
+}
+
 /*
 ****
 COMMON
@@ -98,6 +118,7 @@ COMMON
 .btn {
     border-radius: 25px;
     text-decoration: none;
+    font-family: inherit;
 }
 
 .white {
@@ -121,14 +142,18 @@ COMMON
     box-shadow: 0 2px 8px 2px #dddddd;
 }
 
+main .central-section .content-pink {
+    padding-top: 35px;
+    margin: 0 -50px;
+}
+
 /* Header Top*/
 
 header {
     background-image: url(../img/jumbo.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    font-family: 'Nunito Sans', sans-serif;
 }
 
 .header-top {
@@ -161,7 +186,7 @@ nav .img {
 } */
 
 header .header-top nav ul {
-    min-width: 60%;
+    flex-grow: 1;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -198,7 +223,7 @@ nav .left {
 .header-bottom {
     padding: 50px;
     /* background-color: #00008B; */
-    border-bottom: 4px solid #ADD8E6;
+    /* border-bottom: 4px solid #ADD8E6; */
 }
 
 .header-bottom .jumbotron {
@@ -214,8 +239,6 @@ header .header-bottom h1 {
 }
 
 header .header-bottom p {
-    line-height: 35px;
-    font-size: 20px;
     margin-bottom: 35px;
 }
 
@@ -237,7 +260,7 @@ header .header-bottom div > a {
 /* Main Section */ 
 
 section {
-     padding: 50px 0;
+     padding: 80px 0;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -253,11 +276,15 @@ section:nth-child(even) {
 }
 
 section .content-pink {
-    width: 40%;
+    width: 35%;
+}
+
+main .central-section h2 {
+    margin-bottom: 30px;
 }
 
 section .content-blue {
-    width: 60%;
+    width: 65%;
 }
 
 /* section .content-blue {
