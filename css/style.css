@@ -121,9 +121,13 @@ COMMON
     font-family: inherit;
 }
 
+.big {
+    padding: 15px;
+    font-size: 20px;
+} 
+
 .white {
     background-color: #ffffff;
-    padding: 15px;
     color: #181c3a;
 }
 
@@ -134,26 +138,42 @@ COMMON
 
 .black {
     background-color: #23272a;
-    padding: 15px;
     color: #fffaea;
 }
 
 .black:hover {
+    background-color: #444444;
     box-shadow: 0 2px 8px 2px #dddddd;
 }
 
-main .central-section .content-pink {
-    padding: 35px 40px 35px 0;
+.blue {
+    color: #ffffff;
+    background-color: #7289da;
 }
 
-/* main .central-section .content-pink:nth-child(even) {
-    margin-left: -50px;
-} */
+.blue:hover {
+    background-color: #255ee9;
+    box-shadow: 0 2px 8px 2px #cccccc;
+}
+
+.download::before {
+    content: '\2193';
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 4px 9px 0;
+}
+
+main .central-section .content-pink {
+    padding: 35px 40px 0 0;
+}
 
 main section:nth-child(odd) .content-pink {
     margin-left: -50px;
 }
 
+main section h2 {
+    margin-bottom: 30px;
+}
 /* Header Top*/
 
 header {
@@ -253,13 +273,6 @@ header .header-bottom .btn-header-bottom {
     margin: 0 0 80px 0;
 }
 
-header .header-bottom div a:first-child::before {
-    content: '\2193';
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 4px 9px 0;
-}
-
 header .header-bottom div > a {
     margin: 0 10px;
 }
@@ -286,10 +299,6 @@ section .content-pink {
     width: 35%;
 }
 
-main .central-section h2 {
-    margin-bottom: 30px;
-}
-
 section .content-blue {
     width: 65%;
 }
@@ -309,6 +318,19 @@ section .bottom-section {
 .green-box {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+main .bottom-section .green-box {
+    text-align: center;
+}
+
+main .bottom-section .green-box img {
+    width: 100%;
+}
+
+main .bottom-section .green-box h3 {
+    margin: 30px 0 60px 0;
+    font-size: 28px;
 }
 
 /* Footer */
